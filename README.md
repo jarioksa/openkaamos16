@@ -7,4 +7,5 @@ Talk in Kaamos Symposium, Dec 7, 2016
 
 ## Build
 ```R
-Rscript -e "rmarkdown::render('openkaamos.Rmd')"```
+Rscript -e "rmarkdown::render('openkaamos.Rmd')"
+```
