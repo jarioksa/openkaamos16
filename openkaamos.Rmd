@@ -23,7 +23,7 @@ data(dune.env)
 ## This Talk
 
 - [cc.oulu.fi/~jarioksa/opencon/](http://cc.oulu.fi/~jarioksa/opencon/)
-- Source code available
+- Source code available in [github](https://github.com/jarioksa/openkaamos16)
 - Some slides by Gavin Simpson
 
 # Background for the Talk
@@ -280,7 +280,7 @@ ordispider(mod, dune.env$Management, col=2:5, lwd=2, label = TRUE)
 
 - I have used some of the ideas and even slides of Gavin Simpson's [open science lectures (biol803)](https://github.com/gavinsimpson/biol803-2015)
 - The presentation was built with [R Markdown](http://rmarkdown.rstudio.com)
-- &copy; Jari Oksanen 2015 [CC-BY](http://creativecommons.org/licences/by/4.0/)
+- &copy; Jari Oksanen 2016 [CC-BY](http://creativecommons.org/licences/by/4.0/)
 
 ## How I Did This?
 
