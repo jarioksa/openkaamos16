@@ -22,7 +22,7 @@ data(dune.env)
 
 ## This Talk
 
-- [cc.oulu.fi/~jarioksa/opencon/](http://cc.oulu.fi/~jarioksa/kaamos/openkaamos.html)
+- [cc.oulu.fi/~jarioksa/kaamos/openkaamos.html](http://cc.oulu.fi/~jarioksa/kaamos/openkaamos.html)
 - Source code available in [github](https://github.com/jarioksa/openkaamos16)
 - Some slides by Gavin Simpson
 
