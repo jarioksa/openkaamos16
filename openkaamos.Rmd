@@ -222,7 +222,7 @@ P.C. Serrano (1999) _Science_ __284__, 2137--2147.
 - A large number of other **R** packages utilize **vegan** functionality (see [CRAN](https://CRAN.R-project.org/package=vegan))
 - One goal was to made methods public and open, and having these tools in **vegan** has helped in developing *methods* and *algorithms*
 
-## Why it was Called vegan?
+## Why it was Called vegan? {.flexbox .vcenter}
 
 ![](veganshirt.jpg)
 
