@@ -26,6 +26,13 @@ data(dune.env)
 - Source code available in [github](https://github.com/jarioksa/openkaamos16)
 - Some slides by Gavin Simpson
 
+I will not talk about
+
+- Open data: much too personal
+- Open publishing: much too expensive
+
+This talk is about open methods and open source code implementing those methods
+
 # Background for the Talk
 ## Food and Gut of Science
 
