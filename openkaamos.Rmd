@@ -163,6 +163,15 @@ P.C. Serrano (1999) _Science_ __284__, 2137--2147.
 - Base **R** allows adding functions and packages of functions which behave like native code
 - ... All this may be intimidating to users
 
+## **R**:  Good and Bad Sides
+
+- Good side: **R** is a statistical working environment *and* a programming language
+- Bad side: **R** is a statistical working environment *and* a programming language
+- Allows extension and development of methods and analysis: your own code ("scripts") are equal to canned **R** functions
+- Intimidating environment for casual user or novice
+- There are better programming languages for statistics (*e.g.*, Python), but their statistical environment is worse
+- Main value as an environment is that you can see the methods through the code
+
 # The **vegan** Project
 
 ## The **vegan** Project: the Environment
