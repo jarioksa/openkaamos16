@@ -22,7 +22,7 @@ data(dune.env)
 
 ## This Talk
 
-- [cc.oulu.fi/~jarioksa/opencon/](http://cc.oulu.fi/~jarioksa/opencon/)
+- [cc.oulu.fi/~jarioksa/opencon/](http://cc.oulu.fi/~jarioksa/kaamos/openkaamos.html)
 - Source code available in [github](https://github.com/jarioksa/openkaamos16)
 - Some slides by Gavin Simpson
 
@@ -33,7 +33,7 @@ data(dune.env)
 - Code is the gut of science: you must pre-process the food
 - Reproducible research: *you* should know what you have done, and others should be able to find out what you have done
 - Impossible to reproduce or check results without access to data
-- You should be able to see through the code
+- You should be able to see *through* the code
 
 ## Reproducibility
 
@@ -52,7 +52,7 @@ data(dune.env)
     - coding data?
     - data processing?
     - applying a statistical analysis?
-- Can we truly trust results of research without access to the codes?
+- Can we truly trust results of research without access to their code?
 
 ## Sharing
 
@@ -76,13 +76,34 @@ data(dune.env)
 1. Method: The idea of how things are done to achieve a goal in the analysis
 2. Algorithm: The recipe of making the method real, or a map of reaching the goal
 3. Code: implementation of the algorithm in a way that is understood both by humans and by computers
-4. Software: Packaged code
+4. Software: Packaged code, sometimes impenetrable
 
 - People often mix these: they should tell what methods they use, but they say what was the software
 - Some people focus on open code, but the real value of code is to reveal the methods
 - People should be concerned about the methods
 
-## Open Source Software: Personal Experience
+## Bugs and Other Errors & Mistakes?
+
+- Method can be poor, bad, even misleading and wrong, even fundamentally flawed
+- Algorithm can be inefficient, slow, poor in performance, even wrong
+- Code can contain bugs
+
+    - Bugs are errors in the implementation of algorithm
+
+- Software can package all these and add its own quirks
+
+- **Your** choice of *method* can be mistaken, and your use of software can be wrong
+
+## Open Methods
+
+- Software is your contact point to the methods
+- Software often packs various methods + arbitrary implementation choices into a pipeline
+- Sometimes the implementation details ("options") can be more influential than the method
+- You should know what you do, and therefore you should see through the software
+- You should also be able to change the pipeline
+- From scientists point of view, open source is just a way of making pipelines visible
+
+## Open Source & Open Methods: Personal Experience
 
 - **vegan**: a suite of analysis tools for a scientific niche: analysis of ecological community data of plants and animals
 - The goal was to develop a simplified alternative to existing software --- and some of those were developed by my mates
@@ -102,7 +123,7 @@ data(dune.env)
 - It was customary to have local site versions of software
 - Licence was often vague and could be very restrictive, but not enforced nor understood
 
-## A Typical License
+## A Typical Licence
 
 > C THIS INFORMATION IS PROPRIETARY AND IS THE                                     
 > C PROPERTY OF BELL TELEPHONE LABORATORIES,                                       
@@ -130,12 +151,12 @@ data(dune.env)
 ![](dinosaur.png)
 P.C. Serrano (1999) _Science_ __284__, 2137--2147.
 
-## Open Source Resurrected --- and now really Open
+## Open Source Resurrected
 
 - Linux and the GNU project
 - More effective personal computers that allow sufficiently fast non-compiled scripting languages (Python etc.)
 - For scientific and statistical code, **R** language is the most important
-- Based on **S**-language that was developed in the Bell Labs (where else?)
+- Based on **S**-language that was developed in the Bell Labs
 - Inelegant design in Computer Science sense: but worse is better
 - Designed to match the way a statistician thinks
 - Statistical analysis and coding mixed together
@@ -150,7 +171,7 @@ P.C. Serrano (1999) _Science_ __284__, 2137--2147.
 - Ecological communities are made of a large number of species in a collection of sites
 - Data are **multivariate** and need to be made comprehensible to users
 - Several specialized tools and traditional analyses that are poorly represented in standard statistical toolboxes (SPSS, SAS)
-- Niche market for commercial developers: even most of the paid software developed by practicing scientists
+- Niche market for commercial developers: even most of the paid software developed by scientists
 
 ## The **vegan** project: Goals
 
@@ -184,20 +205,21 @@ P.C. Serrano (1999) _Science_ __284__, 2137--2147.
 
 ## Germination and Growth
 
-- Distributed in Comprehensive R Archive Network [CRAN](https://cran.r-project.org/web/packages/vegan/index.html)
-    - First released in 2001 when there were less than 200 packages --- now there are nearl 10000
+- Distributed in Comprehensive R Archive Network [CRAN](https://CRAN.R-project.org/package=vegan)
+    - First released in 2001 when there were less than 200 packages --- now there are nearly 10,000
     - Gave a nice start for early adopters
     - Attracted other developers: Roeland Kindt, Bob O'Hara, Hank Stevens, Pierre Legendre, Gavin Simpson, Péter Sólymos, Peter Minchin among the first ones
 - Developed now in [github](https://github.com/vegandevs/vegan)
      - More diverse and diffuse developer community
-- Licensed GPL2 (but not GPL3): free license that allows reuse of the code
+- Licensed GPL2 (but not GPL3): free licence that allows reuse of the code -- as long as you use a compatible licence and keep it open
 
 ## The Impact of Going **vegan**
 
 - It has been [much cited](https://scholar.google.fi/citations?view_op=view_citation&hl=en&user=2WBRFVIAAAAJ&citation_for_view=2WBRFVIAAAAJ:u5HHmVD_uO8C) and obviously used to advance science
 - It has atracted a healthy developer team for a scientic niche
 - Moving to [github](https://github.com/vegandevs/vegan) has atracted more contributors: [issues](https://github.com/vegandevs/vegan/issues) and [pull request](https://github.com/vegandevs/vegan/pulls)
-- A large number of other **R** packages utilize **vegan** functionality
+- Bug reports, wishes & code are **welcome**: just go to [github](https://github.com/vegandevs/vegan)
+- A large number of other **R** packages utilize **vegan** functionality (see [CRAN](https://CRAN.R-project.org/package=vegan))
 - One goal was to made methods public and open, and having these tools in **vegan** has helped in developing *methods* and *algorithms*
 
 ## Why it was Called vegan?
@@ -238,41 +260,6 @@ ordispider(mod, dune.env$Management, col=2:5, lwd=2, label = TRUE)
 ## The vegan GUI: BiodiversityR package
 
 ![](biodiversity.png)
-
-# Open Data
-
-## Data journals
-
-- Rise of a new breed of journal, e.g.
-    - Scientific Data
-    - Geoscience Data Journal
-- Focus on papers that describe data
-- Descriptions and meta data
-
-## Data journals
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/hrHM3bUym3g" frameborder="0" allowfullscreen></iframe>
-
-## Data Repositories
-
-- Not enough to just describe data
-- Data journals also mandate that data be deposited in approved repositories
-- Data deposits don't need to be tied to a (data) paper
-- Examples
-    - [Dryad](http://datadryad.org/)
-    - [figShare](http://figshare.com)
-- Increasingly many journals require deposition of data
-
-
-## A Simple Map
-
-<div class="columns-2">
-<img src="myricagale_map2.png" width="480px">
-
-<a title="Sten [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AMyrica-gale-foliage-male-catkins.jpg"><img width="512" alt="Myrica-gale-foliage-male-catkins" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Myrica-gale-foliage-male-catkins.jpg/512px-Myrica-gale-foliage-male-catkins.jpg"/></a>
-</div>
-
-... is based on [Biodiversity data base](http://www.gbif.org), [map data](http://cran.r-project.org/web/packages/rworldmap/), [cartographic projection](https://www.epsg-registry.org), [**R** tools for biodiversity](https://github.com/ropensci/rgbif) and [personal scripts](https://github.com/jarioksa/biogeo) --- all open and freely available
 
 # Thanks
 
